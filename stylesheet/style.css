@@ -5,19 +5,22 @@ body{
 a:visited, a{ color: inherit;}
 
 a:hover{
-    transition:color 0.5s ease;
-    color: #3B4EB1;
+    color: blue;
 }
 
+
+
 #menu{
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
     background-color: #BFC9FF;
     height: 50px;
-    width: 100%;
     line-height: 50px;
     padding: 0 20px;
 }
 
-#menu ul li{
+nav ul a{
     color: #202022;
     display: inline-block;
     vertical-align: middle;
@@ -29,22 +32,22 @@ a:hover{
     line-height: normal;
 }
 
+#menu .menu-option:hover{
+    color: #3B4EB1;
+}
+
+#menu .menu-option:{
+    color:red;
+}
+
 #content{
-    width: 100vw;
     padding: 20px 20px;
     font-size: 1.125em;
     
 }
 
 
-#content p{
-    font-family: 'Lexend', sans-serif;
-    white-space: normal;
-    line-height: 150%;
-    margin-top: 20px;
 
-    
-}
 .bold{
     font-weight: 600;
 }
@@ -52,7 +55,7 @@ a:hover{
 
 #content .wrapper{
     text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .wrapper:not(:first-child)::before{
@@ -68,6 +71,20 @@ a:hover{
     margin-top: 0;
 }
 
+.wrapper p{
+    font-family: 'Lexend', sans-serif;
+    white-space: normal;
+    display: block;
+    text-align: center;
+}
+
+.wrapper > p{
+    line-height: 150%;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+}
+
 .card {
     background-color: #5B6CC6;
     color: #F3F5FF;
@@ -80,6 +97,8 @@ a:hover{
 }
 
 .card-small {
+    background-color: #F1C657;
+    color: #202022;
     height: auto;
     width: 300px;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -87,9 +106,9 @@ a:hover{
 }
 
 .card-small:hover, .card-small:active {
-    background-color: #F1C657;
+    background-color: #5B6CC6;
     transition: background-color 0.5s ease, color 0.5s ease;
-    color: #202022;
+    color: #F3F5FF;
 }
 
 .card-1 {
@@ -125,13 +144,17 @@ a:hover{
 }
 
 .card-title{
+    font-size: 1.25em;
     font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 10px;
+
 
 }
 
 .explanation{
-    margin: 0px 20px 0 20px;
-    line-height: 100%;
+    margin: 10px 20px 0 20px;
+    line-height: 130%;
     font-weight: 400;
     font-size: 1em;
     

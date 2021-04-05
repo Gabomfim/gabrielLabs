@@ -12,36 +12,39 @@
     </head>
         
     <body>
-        <nav>
-            <div id="menu">
+        
+        <div id="menu">
+            <nav>
                 <ul>
-                    <li><a href="#about">About me</a></li>
-                    <li>Projects</li>
+                    <a class="menu-option" href="#about"><li>About me</li></a>
+                    <a class="menu-option" href="#projects"><li>Projects</li></a>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
+        
         <div id="content">
-            <div id="about" class="wrapper">
+            <section id="about" class="wrapper">
                 <div class="card card-2">
                     <img src="images/profile_mobile.jpg"/>
                 </div>
-            </div>
-            <p> I'm a 21 years old developer and designer living in São Paulo, Brazil.
-                Finishing <span class="bold">computer science BS degree</span> in December, 2022 at UNICAMP, one of the <span class="bold">top three</span> universities in South America according to Times Higher Education.
-            </p>
-            <p>I have experience with diverse technologies, from robotics using Arduino, to machine learning projects and augmented reality. 
-                <span class="bold">In here I showcase some of my projects</span></p>
+                <p> I'm a 21 years old developer and designer living in São Paulo, Brazil.
+                    Finishing <span class="bold">computer science BS degree</span> in December, 2022 at UNICAMP, one of the <span class="bold">top three</span> universities in South America according to Times Higher Education.
+                </p>
+                <p>I have experience with diverse technologies, from robotics using Arduino, to machine learning projects and augmented reality. 
+                    <span class="bold">In here I showcase some of my projects</span></p>
+                </section>
             
             
-            <div class="wrapper">
+            
+            <section id="projects" class="wrapper">
                 <a href="projects/perlin-2d/index.html">
                     <div class="card card-small card-2">
-                        <img src="images/perlin-2d.png"/>
                         <p class="card-title">2D map generator</p>
+                        <img src="images/perlin-2d.png"/>
                         <p class="explanation">everytime you reload, a new world map is generated.</p>
                     </div>
                 </a>
-            </div>
+            </section>
         </div>
 
     </body>
